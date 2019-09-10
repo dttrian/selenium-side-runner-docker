@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  chromedriver:
+    image: robcherry/docker-chromedriver
+    privileged: true
+    restart: always
+    environment:
+      - CHROMEDRIVER_WHITELISTED_IPS=''
+
+  seleniumsiderunner:
+    image: trianit/selenium-side-runner
+    volumes:
+      - './sides:/sides'
+      - './out:/root/out'
