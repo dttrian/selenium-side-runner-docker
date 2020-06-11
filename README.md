@@ -16,7 +16,7 @@ image:
 * DELAY_BEFORE_STOP: if set, specifies the delay (in seconds) to wait after the
   test is over. Useful when used with docker compose's --abort-on-container-exit
   so to allow other containers to finishing write to disk, flush buffers, etc.
-  By default is not set, no there's no wait after tests are completed.
+  By default is not set, so there's no wait after tests are completed.
 * OUTPUT_FORMAT: determines the output format of the result file, by default is
   jest (json) but also junit (xml) can be specified
 * SERVER: if set, specifies the target selenium server to be used.
@@ -28,3 +28,4 @@ image:
 If a `.side.yml` file is put together with the .side files (i.e. in the
 `./sides` directory) it will be used as a configuration file for then runner.
 
+Last update with selenium-side-runner 3.17.0
